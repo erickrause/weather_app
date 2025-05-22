@@ -69,7 +69,7 @@ group :development do
 
   gem "syntax_tree"
 
-  gem "pry-byebug", "~> 3.10.1"
+  gem "pry-byebug", "~> 3.11.0"
 end
 
 group :test do
