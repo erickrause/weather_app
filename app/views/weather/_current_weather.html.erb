@@ -1,0 +1,11 @@
+<div class="flex flex-1 flex-col p-8 items-center b">
+  <h3 class="mt-6 text-3xl font-medium text-gray-900"><%= city %> </h3>
+  <dl class="mt-1 flex grow flex-col justify-between text-center">
+    <dt class="sr-only">Temperature</dt>
+    <dd class="text-6xl text-gray-900"><%= current_temperature ? "#{current_temperature}°" : "" %></dd>
+    <dt class="sr-only">Forecast</dt>
+    <dd class="text-gray-700">
+      <%= @current_description %>
+    </dd>
+  </dl>
+</div>

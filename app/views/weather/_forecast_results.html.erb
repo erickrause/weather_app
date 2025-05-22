@@ -1,0 +1,11 @@
+
+<%= turbo_frame_tag "main", class: "flex flex-1 self-stretch" do %>
+  <div class="h-full gap-4 flex-1 flex flex-col" >
+
+    <%= render partial: "weather/current_weather", locals: {city: city, current_temperature: current_temperature} %>
+    <ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <%= render partial: "weather/forecast", collection: forecasts %>
+    </ul>
+  </div>
+<% end %>
+

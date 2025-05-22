@@ -1,0 +1,4 @@
+<%= turbo_stream_from(session[:session_id], "cache_status") if session[:session_id].present? %>
+<div id="cache_status">
+  <span class="italic text-sm font-light"> <%= cached ? "cached" : '' %> </span>
+</div>
