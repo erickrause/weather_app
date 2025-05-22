@@ -4,6 +4,7 @@ class QueryWeatherJob < ApplicationJob
   def perform(address, session_id)
     location = Geocoder.search(address)&.first
 
+    # Query the weather data from cache or API
     weather_data =
       query_weather_data_from_cache(location, session_id) ||
         query_weather_data(location)
