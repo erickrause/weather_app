@@ -72,7 +72,7 @@ class QueryWeatherJob < ApplicationJob
     Rails.cache.write(
       weather_data_cache_key(location.postal_code),
       weather_data,
-      expires_in: 10.seconds
+      expires_in: 30.minutes
     )
 
     weather_data
