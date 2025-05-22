@@ -19,7 +19,7 @@ $ ./bin/dev
 
 ## **Design**
 
-I ended up pushing the logic for weather cache lookup and streaming to a background job.  Parsing the postal code was using an external api.  Since that was already querying a third party service, I made the judgement call to push all of the external calls to the background job.  Data is pushed back to the frontend via turbo streams.
+I ended up pushing the logic for weather cache lookup and streaming to a background job.  Parsing the postal code was using an external api.  Since that was already querying a third party service, I made the judgement call to push all of the external calls to the background job where an external api call wouldn't potentially lock the rails server's thread.  Data is pushed back to the frontend via turbo streams.
 
 ## **External APIs**
 
