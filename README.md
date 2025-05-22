@@ -10,7 +10,6 @@ You'll need ruby installed. [RVM](https://rvm.io/) or [asdf](https://asdf-vm.com
 
 ```sh
 $ bundle
-$ yarn install
 ```
 
 #### **Run the Server:**
