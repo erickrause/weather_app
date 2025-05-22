@@ -25,3 +25,6 @@ I ended up pushing the logic for weather cache lookup and streaming to a backgro
 
 Currently using [geocoder](https://github.com/alexreisner/geocoder) gem to both parse the postal code for caching and conversion to lat/long for lookup in the weather api.
 The weather data is pulled from [weather.gov](https://www.weather.gov/) via the [weather_gov_api](https://rubygems.org/gems/weather_gov_api) gem.  During testing it became obvious that the data coming back from the api was quite inconsistent.  Current temperature and the weather's short description are sometimes just empty.
+
+## **Screenshot**
+<img width="512" alt="Monosnap Weather App 2025-05-21 23-20-32" src="https://github.com/user-attachments/assets/08946050-02ee-4dda-be3f-201195da8408" />
