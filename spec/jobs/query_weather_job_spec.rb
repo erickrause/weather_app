@@ -102,7 +102,7 @@ RSpec.describe QueryWeatherJob, type: :job do
       expect(Rails.cache).to have_received(:write).with(
         "weather_data/20500",
         hash_including(current_temperature: 68),
-        expires_in: 10.seconds
+        expires_in: 30.minutes
       )
       expect(Turbo::StreamsChannel).to have_received(
         :broadcast_replace_to
