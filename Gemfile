@@ -42,7 +42,7 @@ gem "thruster", require: false
 
 # Stylesheets with Tailwind CSS [https://tailwindcss.com/docs/guides/ruby-on-rails]
 gem "tailwindcss-ruby", "~> 4.1"
-gem "tailwindcss-rails", "~> 4.2"
+gem "tailwindcss-rails", "~> 4.4"
 
 # For address lookup and parsing
 gem "geocoder"
